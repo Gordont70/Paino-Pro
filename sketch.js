@@ -64,8 +64,8 @@ function setup() {
   piano.addImage("piano", pianoImage);
   piano.scale = 2.0
 
-  button01 = createSprite(200,200,50,110)
-  fill(0,110,110)
+  //button01 = createSprite(200,200,50,110)
+  //fill(0,110,110)
 
   
   
@@ -79,6 +79,9 @@ function setup() {
 
 function draw() {
   background('white')
+  A = createSprite(250,250,50,50);
+  A.visible = false
+
 
   
   
@@ -90,7 +93,10 @@ function Splay(){
   if(keyDown('A')){
     key01.play();
     key01.setVolume(0.25);
-    text("F",550,250)
+    textSize(200);
+    text("F",550,250);
+    fill("red");
+    A.visible = true;
 
 
     
